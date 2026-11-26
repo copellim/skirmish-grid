@@ -1,0 +1,15 @@
+{
+  "//": "The CLI runs on Node, not on Metro: the app's own config targets a bundler and emits nothing. Node cannot run the engine's TypeScript directly (it uses constructor parameter properties, which type stripping refuses), so the tool is compiled to CommonJS here — app/package.json declares no module type — and run from .build. Only the entry points are listed: tsc pulls in what they import, so src/ui and the expo-file-system sinks never enter this compile.",
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "lib": ["ESNext"],
+    "types": ["node"],
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "noEmit": false,
+    "rootDir": "..",
+    "outDir": "./.build"
+  },
+  "files": ["match-log-cli.ts", "generate-golden.ts"]
+}

@@ -1,0 +1,11 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "resolveJsonModule": true,
+    "types": ["node"]
+  },
+  "//types": "vitest runs on Node and the tests read fixture files off disk. Engine purity stays a review rule, as it already is for the other ambient type packages.",
+  "//": "tools/ is Node, not Metro: it needs @types/node and its own module settings, so it is compiled by tools/tsconfig.json instead. `npm run typecheck` runs both.",
+  "exclude": ["node_modules", "tools", "babel.config.js", "metro.config.js", "android", "ios"]
+}

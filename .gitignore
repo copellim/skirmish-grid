@@ -1,0 +1,17 @@
+# The app has its own .gitignore for everything Expo and Node put inside app/.
+# This one only covers what lands at the repository root.
+
+node_modules/
+
+# private planning tracker (Backlog.md), kept on disk but out of the public repository
+.backlog/
+
+# secrets never belong in the tree
+.env
+.env.*.local
+
+*.log
+.DS_Store
+
+# artefatti della CLI Playwright, usata a mano per guidare il browser
+.playwright-cli/

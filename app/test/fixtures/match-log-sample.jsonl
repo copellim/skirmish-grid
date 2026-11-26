@@ -1,0 +1,32 @@
+{"kind":"matchStart","schemaVersion":2,"matchId":"match-0001","startedAt":"2026-07-31T09:00:00.000Z","choice":{"classes":[{"name":"Fighter","level":3}],"weapon":"Longsword","armor":"Chainmail","shield":null,"featNames":[],"spellNames":[],"partySize":2,"enemyCount":2,"seed":42},"combatants":[{"index":0,"name":"You","side":"A","controller":"human"},{"index":1,"name":"Enemy 1","side":"B","controller":"cpu"},{"index":2,"name":"Ally 2","side":"A","controller":"human"},{"index":3,"name":"Enemy 2","side":"B","controller":"cpu"}]}
+{"kind":"action","turn":1,"actorIndex":0,"controller":"human","action":{"kind":"charge","targetIndex":1}}
+{"kind":"endTurn","turn":1,"actorIndex":0,"controller":"human"}
+{"kind":"action","turn":1,"actorIndex":1,"controller":"cpu","action":{"kind":"attack","targetIndex":0,"powerAttackPenalty":0}}
+{"kind":"endTurn","turn":1,"actorIndex":1,"controller":"cpu"}
+{"kind":"action","turn":1,"actorIndex":2,"controller":"human","action":{"kind":"charge","targetIndex":1}}
+{"kind":"endTurn","turn":1,"actorIndex":2,"controller":"human"}
+{"kind":"action","turn":1,"actorIndex":3,"controller":"cpu","action":{"kind":"attack","targetIndex":0,"powerAttackPenalty":0}}
+{"kind":"endTurn","turn":1,"actorIndex":3,"controller":"cpu"}
+{"kind":"action","turn":2,"actorIndex":0,"controller":"human","action":{"kind":"attack","targetIndex":1,"powerAttackPenalty":0}}
+{"kind":"endTurn","turn":2,"actorIndex":0,"controller":"human"}
+{"kind":"action","turn":2,"actorIndex":1,"controller":"cpu","action":{"kind":"attack","targetIndex":0,"powerAttackPenalty":0}}
+{"kind":"endTurn","turn":2,"actorIndex":1,"controller":"cpu"}
+{"kind":"action","turn":2,"actorIndex":2,"controller":"human","action":{"kind":"attack","targetIndex":1,"powerAttackPenalty":0}}
+{"kind":"endTurn","turn":2,"actorIndex":2,"controller":"human"}
+{"kind":"action","turn":2,"actorIndex":3,"controller":"cpu","action":{"kind":"attack","targetIndex":0,"powerAttackPenalty":0}}
+{"kind":"endTurn","turn":2,"actorIndex":3,"controller":"cpu"}
+{"kind":"action","turn":3,"actorIndex":0,"controller":"human","action":{"kind":"attack","targetIndex":1,"powerAttackPenalty":0}}
+{"kind":"endTurn","turn":3,"actorIndex":0,"controller":"human"}
+{"kind":"endTurn","turn":3,"actorIndex":1,"controller":"cpu"}
+{"kind":"action","turn":3,"actorIndex":2,"controller":"human","action":{"kind":"attack","targetIndex":1,"powerAttackPenalty":0}}
+{"kind":"endTurn","turn":3,"actorIndex":2,"controller":"human"}
+{"kind":"action","turn":3,"actorIndex":3,"controller":"cpu","action":{"kind":"attack","targetIndex":0,"powerAttackPenalty":0}}
+{"kind":"endTurn","turn":3,"actorIndex":3,"controller":"cpu"}
+{"kind":"action","turn":4,"actorIndex":0,"controller":"human","action":{"kind":"attack","targetIndex":3,"powerAttackPenalty":0}}
+{"kind":"endTurn","turn":4,"actorIndex":0,"controller":"human"}
+{"kind":"action","turn":4,"actorIndex":2,"controller":"human","action":{"kind":"attack","targetIndex":3,"powerAttackPenalty":0}}
+{"kind":"endTurn","turn":4,"actorIndex":2,"controller":"human"}
+{"kind":"action","turn":4,"actorIndex":3,"controller":"cpu","action":{"kind":"attack","targetIndex":0,"powerAttackPenalty":0}}
+{"kind":"endTurn","turn":4,"actorIndex":3,"controller":"cpu"}
+{"kind":"action","turn":5,"actorIndex":0,"controller":"human","action":{"kind":"attack","targetIndex":3,"powerAttackPenalty":0}}
+{"kind":"matchEnd","winningSide":"A","combatants":[{"index":0,"name":"You","hitPoints":13,"vitalStatus":"Conscious"},{"index":1,"name":"Enemy 1","hitPoints":-10,"vitalStatus":"Dead"},{"index":2,"name":"Ally 2","hitPoints":29,"vitalStatus":"Conscious"},{"index":3,"name":"Enemy 2","hitPoints":-1,"vitalStatus":"Dying"}]}
